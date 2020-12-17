@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 
 app = Flask(__name__)
 
-model = pickle.load(open('RandomForestBreastCancer.sav', 'rb'))
+model = pickle.load(open('RandomForestsBreastCancer.sav', 'rb'))
 
 
 @app.route('/')
