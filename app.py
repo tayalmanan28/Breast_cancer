@@ -21,7 +21,7 @@ def predict():
     final = np.array(int_features)
     final=[final]
     prediction = model.predict(final)
-    prediction = int(prediction)
+    prediction = prediction
     return render_template('home.html',pred='The report of your Breast Cancer is  {}'.format(prediction))
 
 @app.route('/predict_api',methods=['POST'])
